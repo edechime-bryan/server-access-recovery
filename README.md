@@ -76,8 +76,8 @@ The server was recovered **without any data loss**.
 
 ---
 
-### 4. Launch a New EC2 Instance
-- Created a **new instance** to regain access to the original volume.
+### 4. Launch a New EC2 Instance in the same Availability Zone
+- Created a **new instance** to regain access to the original volume. You can attach volumes to instances that are in the same Availability Zone only.
 
 <p align="center">
   <img src="screenshots/pic4.png" alt="New EC2 instance launched" width="600"><br>
@@ -208,3 +208,4 @@ The server was recovered **without any data loss**.
 - Instance Connect can fail unexpectedly; having a backup key pair is critical.  
 - Detached EBS volumes can be safely reattached to new instances for recovery.  
 - AWS does not allow retroactive key pair application on Amazon Linux instances.
+
